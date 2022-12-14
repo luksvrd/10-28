@@ -1,7 +1,7 @@
 export default class Letter {
   #char;
   constructor(char) {
-    // If a character is not a number or a letter, make it visible right away
+    // '!/[a-z1-9]/i.test(char)' If a character is not a number or a letter, make it visible right away
     // Save the underlying character
     this.isVisible = !/[a-z1-9]/i.test(char);
     this.#char = char;
